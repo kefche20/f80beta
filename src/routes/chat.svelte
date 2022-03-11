@@ -62,8 +62,8 @@
 {#if typeof user === 'undefined'}
     <p class="w3-center w3-section"><i class="fas fa-spinner w3-spin fa-3x" /> Loading</p>
 {:else if user}
-    <h1 class="w3-jumbo w3-center">Serverless chat</h1>
-    <p class="w3-center">Chatroom</p>
+    <h1 class="w3-jumbo w3-center">F80 DATA</h1>
+    <p class="w3-center">Live data</p>
     <p class="w3-center"><button class="w3-button w3-blue" on:click={logout}>Logout</button></p>
 
     <br />

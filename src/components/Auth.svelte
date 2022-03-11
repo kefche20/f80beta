@@ -80,7 +80,7 @@
 <div class="w3-card-4" style="width: 40%; margin: 1rem auto">
     {#if !isAuthenticated}
     <div class="w3-container">
-        <h2 class="w3-center">{authMode === "login" ? "Login" : "Register"} to Serverless Chat</h2>
+        <h2 class="w3-center">{authMode === "login" ? "Login" : "Register"} to F80 DATA</h2>
     </div>
     <div class="w3-container">
         <div class="w3-bar w3-center w3-border-bottom w3-border-gray w3-text-dark-gray">
