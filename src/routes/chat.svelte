@@ -30,15 +30,15 @@
     function messageSubmit(e) {
         if (e.key.toLowerCase() !== 'enter') return;
         if (cooldown) return;
-        const message = (document.getElementById('message-input').value || '').trim();
-        if (!message) return;
+        const MessageText = (document.getElementById('message-input').value || '').trim();
+        if (!MessageText) return;
 
         document.getElementById('message-input').value = '';
         cooldown = true;
         setTimeout(() => (cooldown = false), 3000);
 
         db.collection('messages').add({
-            message,
+            MessageText,
             email: user.email,
             photoURL: user.photoURL,
             uid: user.uid,
@@ -77,7 +77,7 @@
                 <Chat {...m} self={user.uid === m.uid} />
             {/each}
         {:else}
-            <p class="w3-center w3-text-gray">Looks like nobody's sent a message. Be the first!</p>
+            <p class="w3-center w3-text-gray">Looks like nobody's sent a MessageText. Be the first!</p>
         {/if}
         <!-- Dummy element used to scroll chat -->
         <br id="scroll-to" />
